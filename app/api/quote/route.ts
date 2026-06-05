@@ -1,0 +1,74 @@
+import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+import { z } from 'zod';
+
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+
+const schema = z.object({
+  name: z.string().min(2),
+  email: z.string().email(),
+  phone: z.string().min(7),
+  service: z.string().min(1),
+  message: z.string().optional(),
+});
+
+export const dynamic = 'force-dynamic';
+
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+    const data = schema.parse(body);
+
+    const recipientEmail = process.env.ELECTRICIAN_EMAIL || 'info@elektro-becker-demo.example';
+    const fromEmail = process.env.QUOTE_EMAIL_FROM || 'onboarding@resend.dev';
+
+    if (!resend || !process.env.RESEND_API_KEY) {
+      console.info('[Quote] Mock email:', data);
+      return NextResponse.json({ success: true, id: 'mock' });
+    }
+
+    const { error } = await resend.emails.send({
+      from: `Elektro Becker Anfrage <${fromEmail}>`,
+      to: [recipientEmail],
+      subject: `Neue Anfrage: ${data.name} — ${data.service}`,
+      text: `
+Neue Angebotsanfrage
+
+Name:       ${data.name}
+E-Mail:     ${data.email}
+Telefon:    ${data.phone}
+Leistung:   ${data.service}
+Nachricht:  ${data.message || '—'}
+      `.trim(),
+      html: `
+<div style="font-family: Inter, system-ui, sans-serif; max-width: 540px; margin: 0 auto; color: #1e293b;">
+  <div style="background: #1e40af; padding: 24px 32px; border-radius: 8px 8px 0 0;">
+    <h1 style="color: white; margin: 0; font-size: 20px;">Neue Angebotsanfrage</h1>
+    <p style="color: rgba(255,255,255,0.75); margin: 6px 0 0; font-size: 13px;">Elektro Becker GmbH</p>
+  </div>
+  <div style="background: #f8fafc; padding: 32px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr><td style="padding: 8px 0; color: #64748b; font-size: 13px; width: 110px;">Name</td><td style="padding: 8px 0; font-weight: 600;">${data.name}</td></tr>
+      <tr><td style="padding: 8px 0; color: #64748b; font-size: 13px;">E-Mail</td><td style="padding: 8px 0; font-weight: 600;"><a href="mailto:${data.email}" style="color: #1e40af;">${data.email}</a></td></tr>
+      <tr><td style="padding: 8px 0; color: #64748b; font-size: 13px;">Telefon</td><td style="padding: 8px 0; font-weight: 600;"><a href="tel:${data.phone}" style="color: #1e40af;">${data.phone}</a></td></tr>
+      <tr><td style="padding: 8px 0; color: #64748b; font-size: 13px;">Leistung</td><td style="padding: 8px 0; font-weight: 600;">${data.service}</td></tr>
+      ${data.message ? `<tr><td style="padding: 8px 0; color: #64748b; font-size: 13px; vertical-align: top;">Nachricht</td><td style="padding: 8px 0;">${data.message}</td></tr>` : ''}
+    </table>
+  </div>
+</div>
+      `,
+    });
+
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 400 });
+    }
+
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    if (err instanceof z.ZodError) {
+      return NextResponse.json({ error: 'Invalid data', issues: err.issues }, { status: 422 });
+    }
+    console.error('[Quote] Error:', err);
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  }
+}

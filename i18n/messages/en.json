@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Elektro Becker GmbH | Electrician in Gelsenkirchen",
+    "description": "Master electrician for installation, repair, smart home and solar in Gelsenkirchen. 20+ years experience. 24/7 emergency service."
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "projects": "References",
+    "contact": "Contact",
+    "ctaButton": "Request a quote"
+  },
+  "hero": {
+    "eyebrow": "Master Electrician · Gelsenkirchen & Region",
+    "headline": "Your trusted electrician — fast, clean, affordable",
+    "subline": "From new installations to emergency repairs: we handle all electrical work professionally and on time.",
+    "cta": "Request a free quote",
+    "ctaServices": "View services",
+    "badge1": "20+ years experience",
+    "badge2": "Master craftsman",
+    "badge3": "24/7 emergency"
+  },
+  "stats": {
+    "stat1": "Completed projects",
+    "stat2": "Years experience",
+    "stat3": "Emergency service",
+    "stat4": "Customer rating"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "What we do for you",
+    "subtitle": "From simple repairs to full smart home upgrades — we are your go-to electrical contractor.",
+    "service1Title": "Electrical Installation",
+    "service1Desc": "New construction, renovation and expansion of electrical systems for residential and commercial.",
+    "service2Title": "Repair & Maintenance",
+    "service2Desc": "Fast fault diagnosis and emergency help for short circuits, outages or defective devices.",
+    "service3Title": "Smart Home",
+    "service3Desc": "KNX, Loxone, Philips Hue and Alexa integration for your intelligent home.",
+    "service4Title": "Solar & Photovoltaics",
+    "service4Desc": "Solar panels, battery storage and EV charger — turnkey from a single source.",
+    "service5Title": "Emergency Service 24/7",
+    "service5Desc": "Always reachable — including weekends and holidays. We'll be with you within 60 minutes.",
+    "service6Title": "E-Mobility",
+    "service6Desc": "Wallbox installation for home and commercial. All major manufacturers supported.",
+    "learnMore": "Learn more"
+  },
+  "about": {
+    "badge": "About us",
+    "title": "The Becker family — your electrician for 20 years",
+    "description": "As an owner-operated master electrician from Gelsenkirchen, we know the region and its requirements. Quality, punctuality and fair prices are not promises — they are our everyday standard.",
+    "feature1Title": "Fixed-price quotes",
+    "feature1Desc": "No hidden costs — you receive a transparent quote before work begins.",
+    "feature2Title": "Own employees",
+    "feature2Desc": "Exclusively our own qualified professionals. No subcontractors.",
+    "feature3Title": "Work guarantee",
+    "feature3Desc": "We provide a written work guarantee on all our services.",
+    "imageAlt": "Electrician at work",
+    "badgeExperience": "Master business since 2004",
+    "badgeCert": "TÜV-certified"
+  },
+  "process": {
+    "badge": "How it works",
+    "title": "From inquiry to completion in 4 steps",
+    "subtitle": "Simple, transparent and without surprises.",
+    "step1Title": "Submit inquiry",
+    "step1Desc": "Fill out our form or call us — we'll get back to you within 24 hours.",
+    "step2Title": "On-site visit",
+    "step2Desc": "Free inspection at your home or business.",
+    "step3Title": "Receive quote",
+    "step3Desc": "Transparent cost breakdown with no hidden fees.",
+    "step4Title": "Work completed",
+    "step4Desc": "Clean, on time and inspected — with work guarantee and acceptance report."
+  },
+  "projects": {
+    "badge": "References",
+    "title": "Our work speaks for itself",
+    "subtitle": "Selected projects from Gelsenkirchen and the surrounding area."
+  },
+  "testimonials": {
+    "badge": "Reviews",
+    "title": "What our customers say",
+    "subtitle": "Real experiences — directly from our clients."
+  },
+  "quote": {
+    "badge": "Request a quote",
+    "title": "Free & non-binding inquiry",
+    "subtitle": "Fill out the form — we'll get back to you within 24 hours.",
+    "name": "Full name",
+    "namePlaceholder": "Max Mustermann",
+    "email": "Email address",
+    "emailPlaceholder": "max@example.de",
+    "phone": "Phone number",
+    "phonePlaceholder": "0209 ...",
+    "service": "Desired service",
+    "servicePlaceholder": "Please select",
+    "message": "Short description (optional)",
+    "messagePlaceholder": "Briefly describe what you need...",
+    "submit": "Send inquiry",
+    "submitting": "Sending...",
+    "success": "Thank you! We will get back to you within 24 hours.",
+    "successNew": "Submit new inquiry",
+    "error": "Something went wrong. Please try again or call us.",
+    "nameError": "Please enter your name (min. 2 characters)",
+    "emailError": "Please enter a valid email address",
+    "phoneError": "Please enter a valid phone number",
+    "serviceError": "Please select a service"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in touch",
+    "subtitle": "We are available Mon–Fri 7am–6pm. For emergencies: 24/7.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "mapTitle": "Location Gelsenkirchen"
+  },
+  "footer": {
+    "tagline": "Master electrician for electrical installation in Gelsenkirchen since 2004",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "impressum": "Impressum",
+    "datenschutz": "Privacy policy",
+    "copyright": "© 2025 Elektro Becker GmbH. All rights reserved.",
+    "madeBy": "Website created by",
+    "madeByLink": "kobiakov.dev"
+  },
+  "lang": {
+    "de": "DE",
+    "en": "EN"
+  }
+}

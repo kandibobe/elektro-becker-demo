@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elektro-becker-demo.vercel.app/sitemap.xml

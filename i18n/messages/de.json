@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Elektro Becker GmbH | Ihr Elektriker in Gelsenkirchen",
+    "description": "Meisterbetrieb für Elektroinstallation, Reparatur, Smart Home und Photovoltaik in Gelsenkirchen und Umgebung. 20+ Jahre Erfahrung. 24/7 Notdienst."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "about": "Über uns",
+    "projects": "Referenzen",
+    "contact": "Kontakt",
+    "ctaButton": "Kostenlos anfragen"
+  },
+  "hero": {
+    "eyebrow": "Meisterbetrieb · Gelsenkirchen & Umgebung",
+    "headline": "Ihr zuverlässiger Elektriker — schnell, sauber, günstig",
+    "subline": "Von der Neuinstallation bis zum Notdienst: Wir erledigen alle Elektroarbeiten fachmännisch und termingerecht.",
+    "cta": "Jetzt Angebot anfordern",
+    "ctaServices": "Leistungen ansehen",
+    "badge1": "20+ Jahre Erfahrung",
+    "badge2": "Meisterbetrieb",
+    "badge3": "24/7 Notdienst"
+  },
+  "stats": {
+    "stat1": "Abgeschlossene Projekte",
+    "stat2": "Jahre Erfahrung",
+    "stat3": "Notdienst",
+    "stat4": "Kundenbewertung"
+  },
+  "services": {
+    "badge": "Unsere Leistungen",
+    "title": "Was wir für Sie tun",
+    "subtitle": "Von der einfachen Reparatur bis zur kompletten Smart-Home-Nachrüstung — wir sind Ihr Ansprechpartner.",
+    "service1Title": "Elektroinstallation",
+    "service1Desc": "Neubau, Sanierung und Erweiterung von Elektroinstallationen für Privat und Gewerbe.",
+    "service2Title": "Reparatur & Wartung",
+    "service2Desc": "Schnelle Fehlersuche und Pannenhilfe bei Kurzschluss, Ausfall oder defekten Geräten.",
+    "service3Title": "Smart Home",
+    "service3Desc": "KNX, Loxone, Philips Hue und Alexa-Integration für Ihr intelligentes Zuhause.",
+    "service4Title": "Photovoltaik",
+    "service4Desc": "Solaranlagen, Batteriespeicher und Wallbox aus einer Hand — schlüsselfertig.",
+    "service5Title": "Notdienst 24/7",
+    "service5Desc": "Immer erreichbar — auch an Wochenenden und Feiertagen. Wir sind in 60 Min. bei Ihnen.",
+    "service6Title": "E-Mobilität",
+    "service6Desc": "Wallbox-Installation für Zuhause und Gewerbe. Alle gängigen Hersteller.",
+    "learnMore": "Mehr erfahren"
+  },
+  "about": {
+    "badge": "Über uns",
+    "title": "Familie Becker — seit 20 Jahren Ihr Elektriker",
+    "description": "Als inhabergeführter Meisterbetrieb aus Gelsenkirchen kennen wir die Region und ihre Anforderungen. Qualität, Pünktlichkeit und faire Preise sind keine Versprechen — das ist unser Alltag.",
+    "feature1Title": "Festpreisangebote",
+    "feature1Desc": "Keine versteckten Kosten — Sie erhalten ein transparentes Angebot vor Arbeitsbeginn.",
+    "feature2Title": "Eigene Mitarbeiter",
+    "feature2Desc": "Ausschließlich eigene, qualifizierte Fachkräfte. Keine Subunternehmer.",
+    "feature3Title": "Arbeitsgarantie",
+    "feature3Desc": "Auf alle unsere Leistungen geben wir eine schriftliche Arbeitsgarantie.",
+    "imageAlt": "Elektriker bei der Arbeit",
+    "badgeExperience": "Meisterbetrieb seit 2004",
+    "badgeCert": "TÜV-geprüft"
+  },
+  "process": {
+    "badge": "So funktioniert es",
+    "title": "In 4 Schritten zum fertigen Auftrag",
+    "subtitle": "Einfach, transparent und ohne Überraschungen.",
+    "step1Title": "Anfrage stellen",
+    "step1Desc": "Füllen Sie unser Formular aus oder rufen Sie uns an — wir melden uns innerhalb von 24 Stunden.",
+    "step2Title": "Vor-Ort-Termin",
+    "step2Desc": "Kostenloser Besichtigungstermin bei Ihnen zu Hause oder im Gewerbe.",
+    "step3Title": "Angebot erhalten",
+    "step3Desc": "Transparente Kostenaufstellung ohne versteckte Gebühren.",
+    "step4Title": "Arbeit ausgeführt",
+    "step4Desc": "Sauber, pünktlich und geprüft — mit Arbeitsgarantie und Abnahmeprotokoll."
+  },
+  "projects": {
+    "badge": "Referenzen",
+    "title": "Unsere Arbeit spricht für sich",
+    "subtitle": "Ausgewählte Projekte aus Gelsenkirchen und der Umgebung."
+  },
+  "testimonials": {
+    "badge": "Bewertungen",
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Echte Erfahrungen — direkt von unseren Auftraggebern."
+  },
+  "quote": {
+    "badge": "Angebot anfordern",
+    "title": "Kostenlos & unverbindlich anfragen",
+    "subtitle": "Füllen Sie das Formular aus — wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "name": "Vor- und Nachname",
+    "namePlaceholder": "Max Mustermann",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "max@beispiel.de",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "0209 ...",
+    "service": "Gewünschte Leistung",
+    "servicePlaceholder": "Bitte wählen",
+    "message": "Kurze Beschreibung (optional)",
+    "messagePlaceholder": "Beschreiben Sie kurz, was Sie benötigen...",
+    "submit": "Anfrage absenden",
+    "submitting": "Wird gesendet...",
+    "success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "successNew": "Neue Anfrage stellen",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+    "nameError": "Bitte geben Sie Ihren Namen ein (min. 2 Zeichen)",
+    "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "phoneError": "Bitte geben Sie eine gültige Telefonnummer ein",
+    "serviceError": "Bitte wählen Sie eine Leistung aus"
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Sprechen Sie uns an",
+    "subtitle": "Wir sind Mo–Fr 7–18 Uhr erreichbar. Für Notfälle: 24/7.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "mapTitle": "Standort Gelsenkirchen"
+  },
+  "footer": {
+    "tagline": "Meisterbetrieb für Elektroinstallation in Gelsenkirchen seit 2004",
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "copyright": "© 2025 Elektro Becker GmbH. Alle Rechte vorbehalten.",
+    "madeBy": "Website erstellt von",
+    "madeByLink": "kobiakov.dev"
+  },
+  "lang": {
+    "de": "DE",
+    "en": "EN"
+  }
+}
