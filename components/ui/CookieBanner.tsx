@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Link } from '@/i18n/routing';
 
 const STORAGE_KEY = 'elektro-becker-cookie-consent';
 
@@ -26,9 +27,12 @@ export function CookieBanner() {
         <p className="text-slate-300 text-sm flex-1 leading-relaxed">
           Diese Website verwendet ausschließlich technisch notwendige Cookies. Es werden keine
           Tracking- oder Analyse-Cookies eingesetzt.{' '}
-          <a href="/datenschutz" className="underline text-yellow-400 hover:text-yellow-300 transition-colors">
+          <Link
+            href="/datenschutz"
+            className="underline text-yellow-400 hover:text-yellow-300 transition-colors"
+          >
             Datenschutzerklärung
-          </a>
+          </Link>
         </p>
         <button
           onClick={accept}
