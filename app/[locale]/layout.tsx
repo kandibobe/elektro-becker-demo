@@ -9,6 +9,7 @@ import { Header } from '@components/layout/Header';
 import { Footer } from '@components/layout/Footer';
 import { DemoBanner } from '@components/ui/DemoBanner';
 import { FloatingCallButton } from '@components/ui/FloatingCallButton';
+import { CookieBanner } from '@components/ui/CookieBanner';
 import { routing } from '@/i18n/routing';
 import { electricianConfig } from '@lib/config';
 import '../globals.css';
@@ -114,6 +115,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer />
           <FloatingCallButton />
+          <CookieBanner />
           <Toaster position="bottom-right" richColors />
         </NextIntlClientProvider>
       </body>

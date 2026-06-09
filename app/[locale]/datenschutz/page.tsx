@@ -94,7 +94,28 @@ export default function DatenschutzPage() {
 
           <section>
             <h2 className="text-base font-bold text-[var(--color-text)] mb-2">
-              5. Ihre Rechte
+              5. Bildmaterial (Unsplash)
+            </h2>
+            <p className="leading-relaxed">
+              Einige Bilder auf dieser Website werden über den Dienst Unsplash (Unsplash Inc.,
+              500 rue Notre-Dame Ouest, Montréal, QC, Kanada) eingebunden. Beim Abrufen der
+              Bilder kann Unsplash technische Daten (z. B. IP-Adresse) empfangen. Weitere
+              Informationen finden Sie in der{' '}
+              <a
+                href="https://unsplash.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-blue-glow)] underline hover:no-underline"
+              >
+                Datenschutzerklärung von Unsplash
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-base font-bold text-[var(--color-text)] mb-2">
+              6. Ihre Rechte
             </h2>
             <p className="leading-relaxed">
               Sie haben gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung und

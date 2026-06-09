@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { z } from 'zod';
+import { checkRateLimit, getClientIp } from '@lib/rate-limit';
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
@@ -15,6 +16,11 @@ const schema = z.object({
 export const dynamic = 'force-dynamic';
 
 export async function POST(request: Request) {
+  const ip = getClientIp(request);
+  if (!checkRateLimit(ip, 5, 10 * 60 * 1000)) {
+    return NextResponse.json({ error: 'Zu viele Anfragen. Bitte warten Sie einen Moment.' }, { status: 429 });
+  }
+
   try {
     const body = await request.json();
     const data = schema.parse(body);
