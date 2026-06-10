@@ -13,11 +13,12 @@ import { serviceOptions } from '@lib/config';
 import { cn } from '@lib/utils';
 
 const schema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
-  phone: z.string().min(7),
-  service: z.string().min(1),
-  message: z.string().optional(),
+  name: z.string().min(2).max(100),
+  email: z.string().email().max(150),
+  phone: z.string().min(7).max(30),
+  service: z.string().min(1).max(200),
+  message: z.string().max(2000).optional(),
+  website: z.string().max(0).optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -185,6 +186,9 @@ export function QuoteSection() {
                   className={cn(inputClass, 'resize-none')}
                 />
               </Field>
+
+              {/* Honeypot — hidden from real users, bots fill it */}
+              <input {...register('website')} className="hidden" aria-hidden="true" tabIndex={-1} autoComplete="off" />
 
               {/* Submit */}
               <button
